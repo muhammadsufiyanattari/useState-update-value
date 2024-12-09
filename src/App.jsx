@@ -10,7 +10,7 @@ function App() {
     <>
       <div className="main">
         <h1 className="hd">Increment Dicriment</h1>
-        <h1>{num}</h1>
+        <h1>{num<10?"0"+num:num}</h1>
         <button onClick={()=>{setCount(num+1)}}>Plus</button>
         <button onClick={()=>{setCount(num-1)}}>Minas</button>
       </div>
